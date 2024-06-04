@@ -1,0 +1,25 @@
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    color: #ff5100;
+    z-index: 1;
+    text-decoration: underline;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-size: 0.8em;
+    background-color: transparent;
+    padding: 0.3em;
+    transition: all 0.3s ease-in;
+}
+
+.close:hover{
+    border: 1px solid grey;
+    background: #fff;
+    padding: .5em .9em;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
