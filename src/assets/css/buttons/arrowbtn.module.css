@@ -20,16 +20,22 @@
     transition: 1s;
     border-radius: 100px;
     box-shadow: 0 0 0.2em 0 var(--color-background);
-  }
-  
-  .btnContent:hover, .btnContent:focus {
     transition: 0.5s;
     -webkit-animation: btnContent 1s;
-    animation: btnContent 1s;
+    animation: btnContent 1.2s infinite;
     outline: 0.1em solid transparent;
     outline-offset: 0.2em;
     box-shadow: 0 0 0.4em 0 var(--color-background);
   }
+  
+  /* .btnContent:hover, .btnContent:focus {
+    transition: 0.5s;
+    -webkit-animation: btnContent 1s;
+    animation: btnContent 1s infinite;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+  } */
   
   .btnContent .iconArrow{
     transition: 0.5s;
@@ -101,5 +107,7 @@
     0% {
       outline: 0.2em solid var(--color-background);
       outline-offset: 0;
+      /* outline: 0.1em solid transparent;
+      outline-offset: 0.2em; */
     }
   }

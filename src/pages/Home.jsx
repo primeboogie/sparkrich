@@ -7,7 +7,7 @@ import styles from '@css/home.module.css'
 
 function Home() {
   const [LoginState, setLoginState] = useState(false)
-  const [SignUpState, setSignUpState] = useState(true)
+  const [SignUpState, setSignUpState] = useState(false)
 
   const handleLogin = () => {
     setLoginState(true)
@@ -41,7 +41,7 @@ function Home() {
           <p> 
           ✨ We transform marketing services across all social media platforms and offer a curated 
           selection of products. To continue with us, please click the button below to log in to your account 
-          and see today's featured products.
+          and see today's featured products.m
             </p>
         
         <ArrowBtn>Client area</ArrowBtn>

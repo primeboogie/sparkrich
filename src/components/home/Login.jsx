@@ -3,14 +3,25 @@ import styles from '@css/forms/login.module.css';
 import Close from '@comp/ui/extras/Close.jsx'
 
 function Login({ onClose }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [loginInputs, setLoginInputs] = useState({
+    username: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+
+    setLoginInputs(prev => {
+      return {
+       ...prev,
+        [e.target.name]: e.target.value,
+      }
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
-    console.log('Email:', username);
-    console.log('Password:', password);
+    console.log(loginInputs);
   };
 
   return (
@@ -19,15 +30,14 @@ function Login({ onClose }) {
       <div className={styles.h1}>
         <img src="/spark.png" alt="" srcSet="" />
         Login</div>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form onSubmit={handleSubmit} className={styles.formLogin}>
         <input
-        //   pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
           placeholder="Username"
           id="Username"
-          name="Username"
+          name="username"
           type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={loginInputs.username}
+          onChange={(e) => handleChange(e)}
           className={styles.input}
         />
         <input
@@ -35,11 +45,10 @@ function Login({ onClose }) {
           id="password"
           name="password"
           type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={loginInputs.password}
+          onChange={(e) => handleChange(e)}
           className={styles.input}
         />
-        {/* <input value="Login" className={styles.btn} type="submit" /> */}
         <button className={` ${styles.btn} ${styles.ontime} `} type="submit">
             <strong>Login</strong>
             <div id={styles.containerStars}>

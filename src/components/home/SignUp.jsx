@@ -1,19 +1,84 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '@css/forms/login.module.css';
 import Close from '@comp/ui/extras/Close.jsx'
 import InputAuth from '@comp/ui/inputs/InputAuth.jsx'
 
 
 function SignUp({ onClose}) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [signUpInputs, setSignUpInputs] = useState({
+    username: '',
+    phone: '',
+    email: '',
+    country: '',
+    country_call: '+000',
+    password: '',
+  });
+  const[countrys, setCountrys] = useState([])
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://spark.crownwave.org/api/");
+        const data = await response.json();
+        if (data.length > 0) {
+          setCountrys(data);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleChange = (e) => {
+    const newName = e.target.name;
+    let newValue = e.target.value;
+  
+    if (newName === 'country' && newValue !== '') {
+      const selectedCountry = countrys.find(country => country.cid == newValue);
+  
+      if (selectedCountry) {
+        setSignUpInputs(prev => ({
+          ...prev,
+          [newName]: newValue, 
+          country_call: selectedCountry.ccall,
+        }));
+      } else {
+        console.error(`Country with ID ${newValue} not found.`);
+      }
+    } else if (newName === 'phone' && newValue !== '') {
+      if(newValue[0] == 0){
+        newValue = ''
+      }
+      setSignUpInputs(prev => ({
+        ...prev,
+        [newName]: newValue
+      }));
+    } else {
+      setSignUpInputs(prev => ({
+        ...prev,
+        [newName]: newValue
+      }));
+    }
+  };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Email:', email);
-    console.log('Password:', password);
+    console.log(signUpInputs)
   };
+
+  const Listed = () => {
+    countrys.sort((a, b) => a.cname.localeCompare(b.cname));
+    return countrys.map((country) => {
+      return (
+        <option key={country.cid} id={country.cid} value={country.cid}>
+          {country.cname} - {country.ccurrency}
+        </option>
+      );
+    });
+  }
 
   return (
     <div className={`${styles.login} `}>
@@ -25,67 +90,71 @@ function SignUp({ onClose}) {
       <form onSubmit={handleSubmit} className={styles.form}>
       <div className={styles.wrapinputs}>
             <input
-            placeholder="Email"
-            id="email"
-            name="email"
+            placeholder="Username"
+            id="username"
+            name="username"
             type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={signUpInputs.username}
+            required
+            onChange={(e) => handleChange(e)}
             className={styles.input}
             />
-            <input
-            placeholder="Password"
-            id="password"
-            name="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={styles.input}
-            />
+
+            <select name="country" id="country" required value={signUpInputs.country} onChange={(e) => handleChange(e)}>
+              <option value="">--Select Your Country--</option>
+              {<Listed/>}
+
+            </select>
         </div>
+
         <div className={styles.wrapinputs}>
             <input
+            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
             placeholder="Email"
             id="email"
             name="email"
+            type="email"
+            value={signUpInputs.email}
+            required
+            onChange={(e) => handleChange(e)}
+            className={styles.input}
+            />
+          <div className={styles.prefix}>
+            <span>{signUpInputs.country_call}</span>
+          <input
+            placeholder="Phone"
+            inputMode='tel'
+            id="phone"
+            name="phone"
             type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={signUpInputs.phone}
+            onChange={(e) => handleChange(e)}
+            required
             className={styles.input}
             />
-            <input
-            placeholder="Password"
-            id="password"
-            name="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={styles.input}
-            />
+          </div>
         </div>
+
         <div className={styles.wrapinputs}>
             <input
-            placeholder="Email"
-            id="email"
-            name="email"
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={styles.input}
-            />
-            <input
             placeholder="Password"
             id="password"
             name="password"
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={signUpInputs.password}
+            required
+            onChange={(e) => handleChange(e)}
+            className={styles.input}
+            />
+            <input
+            placeholder="Confirm-Password"
+            type="text"
+            defaultValue={signUpInputs.password}
+            readOnly
             className={styles.input}
             />
         </div>
 
-
-        {/* <input value="Creat-Account" className={styles.btn} type="submit" /> */}
         <button className={` ${styles.btn} ${styles.ontime} `} type="submit">
             <strong>Creat-Account</strong>
             <div id={styles.containerStars}>
