@@ -1,0 +1,66 @@
+
+.nfs{
+    color: #fff;
+}
+@media only screen and (min-width: 1200px) {
+.nfs {
+    font-size: calc(10px + 1vw); /* Example: Increase font size slightly with viewport width */
+}
+}
+
+/* Medium screens (tablets, smaller desktops) */
+@media only screen and (max-width: 1199px) {
+.nfs {
+    font-size: calc(10px + 0.5vw); /* Example: Slightly smaller font size for tablets and smaller desktops */
+}
+}
+
+/* Small screens (tablets in portrait mode, large phones) */
+@media only screen and (max-width: 991px) {
+.nfs {
+    font-size: calc(12px + 0.25vw); /* Example: Further reduction in font size for smaller tablets and large phones */
+}
+}
+
+/* Extra small screens (phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+.nfs {
+    font-size: 10px; /* Example: Smaller font size for phones and smaller devices */
+}
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width: 480px) {
+.nfs {
+    font-size: 8px; /* Example: Minimal font size for landscape phones and very small devices */
+}
+}
+
+
+
+
+@media only screen and (max-width: 787px) {
+
+
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width: 680px) {
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+}
+
+@media only screen and (max-width: 330px) {
+
+  
+}

@@ -3,9 +3,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 340px;
-    min-height: 400px;
-    background: rgba(104, 102, 102, 0.76);
+    width: auto;
+    height: auto;
+    background: rgba(104, 102, 102, 0.51);
     backdrop-filter: blur(5px);
     color: #fff;
     border-radius: 17px;
@@ -18,21 +18,23 @@
     overflow: hidden;
   }
   
+  .formLogin,
   .form{
     grid-area: 2/1/3/2;
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
+    grid-gap: 0.6em;
     width: 500px;
   }
   .formLogin{
-    grid-area: 2/1/3/2;
-    display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    width: 400px;
+    padding: 1em 2em;
   }
+
   .wrapinputs{
     width: 100%;
     display: grid;
@@ -52,7 +54,6 @@
     outline: none;
     width: 100%;
     padding: 0.9em 1em;
-    margin: 20px 0 0 0;
     font-size: 1em;
     border-radius: 100px;
     background: rgba(149, 145, 145, 0.89);
@@ -65,30 +66,29 @@
   .login input::placeholder {
     color: #e5e1e1;
   }
-  
-  /* .login input:focus {
-    animation: bounce 1s;
-    -webkit-appearance: none;
-  }
-   */
+
 
    .prefix {
     width: 100%;
-    
-  }
-  .prefix span{
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    font-weight: 500;
-    padding-left: 0.5em;
-    padding-right: 0.4em;
-    border-right: 2px solid #cf9023;
+    background: rgba(149, 145, 145, 0.89);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: bounce 1s;
     -webkit-appearance: none;
   }
+  .prefix span{
+    width: auto;
+    font-weight: 500;
+    border-right: 2px solid #cf9023;
+    padding:0 0.5em;
+  }
   .prefix input{
-    padding-left: 3.6em ;
+    width: 100%;
+    background: none;
+    padding-left: 0.3em;
+    animation: none ;
   }
 
   .h1 {
@@ -101,15 +101,11 @@
     font-weight: 900;
     text-decoration: underline double;
     text-shadow: 0 0 9px yellow;
-
-    /* background-color: #620909; */
   }
   .h1 img{
     width: 120px;
     height: 120px;
     transform: scale(1.5);
-    /* border-radius: 50%; */
-
   }
   
 
@@ -130,15 +126,7 @@
     border-image: linear-gradient(0.25turn, #535EFC, #0EC8EE, #0EC8EE);
     border-image-slice: 1;
     display: inline;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .login {
-      width: 70%;
-      padding: 3em;
-    }
-  }
-  
+  }  
   @keyframes bounce {
     0% {
       transform: translateX(-250px);
@@ -183,7 +171,7 @@
     background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    margin: 40px 0 0 0 ;
+    place-self: center;
 
   }
   
@@ -338,3 +326,48 @@
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }
+
+
+  @media only screen and (max-width: 787px) {
+
+
+    }
+    
+    /* Landscape phones and smaller */
+    @media only screen and (max-width: 680px) {
+  
+
+    }
+    
+    @media only screen and (max-width: 550px) {
+      .login{
+        width: 95%;
+      }
+      .formLogin,
+      .form{
+        width: auto;
+
+      }
+      .formLogin{
+        padding: 1em 0;
+      }
+
+      .wrapinputs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.6em;
+      }
+    
+    } 
+    
+    @media only screen and (max-width: 480px) {
+  
+      
+    }
+    
+    @media only screen and (max-width: 330px) {
+  
+      
+    }
+    

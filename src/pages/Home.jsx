@@ -4,10 +4,11 @@ import ArrowBtn from '@comp/ui/buttons/ArrowBtn.jsx'
 import Login from '@comp/home/Login.jsx' 
 import SignUp from '@comp/home/SignUp.jsx' 
 import styles from '@css/home.module.css'
+// import mcss from '@css/main.module.css'
 
 function Home() {
   const [LoginState, setLoginState] = useState(false)
-  const [SignUpState, setSignUpState] = useState(false)
+  const [SignUpState, setSignUpState] = useState(true)
 
   const handleLogin = () => {
     setLoginState(true)
