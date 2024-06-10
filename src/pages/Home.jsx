@@ -8,7 +8,7 @@ import styles from '@css/home.module.css'
 
 function Home() {
   const [LoginState, setLoginState] = useState(false)
-  const [SignUpState, setSignUpState] = useState(true)
+  const [SignUpState, setSignUpState] = useState(false)
 
   const handleLogin = () => {
     setLoginState(true)
