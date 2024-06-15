@@ -6,7 +6,7 @@ import SignUp from '@comp/home/SignUp.jsx'
 import styles from '@css/home.module.css'
 // import mcss from '@css/main.module.css'
 
-function Home() {
+function Home({auth}) {
   const [LoginState, setLoginState] = useState(false)
   const [SignUpState, setSignUpState] = useState(false)
 
@@ -45,7 +45,7 @@ function Home() {
           and see today's featured products.m
             </p>
         
-        <ArrowBtn>Client area</ArrowBtn>
+        <ArrowBtn onClick={auth}>Client area</ArrowBtn>
         </div>
         {LoginState && <Login onClose={setLoginState}/>}
         {SignUpState && <SignUp onClose={setSignUpState} />}

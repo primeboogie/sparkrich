@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '@css/buttons/arrowbtn.module.css';
 
-function ArrowBtn({ children }) {
+function ArrowBtn({ children, onClick }) {
   return (
-    <div className={styles.btnContainer}>
+    <div className={styles.btnContainer} onClick={onClick}>
       <a className={styles.btnContent} href="#">
         <span className={styles.btnTitle}>{children}</span>
         <span className={styles.iconArrow}>

@@ -1,10 +1,19 @@
-import React from 'react'
-import logo from '/public/spark.png'
+import React, { useState} from 'react'
 import Home from '@pages/Home'
+import Account from '@pages/Account'
 
 function App() {
+  const [auth, setAuth] = useState(false)
+  const handleAuth = () => {
+    setAuth(!auth)
+  }
+
   return (
-    <Home/>
+    <>
+    {
+      auth ?  <Account /> : <Home auth={handleAuth}/> 
+    }
+    </>
   )
 }
 
