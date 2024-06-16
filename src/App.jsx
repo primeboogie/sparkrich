@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import Home from '@pages/Home'
-import Account from '@pages/Account'
+import Compiler from '@pages/Compiler'
 
 function App() {
   const [auth, setAuth] = useState(false)
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     {
-      auth ?  <Account /> : <Home auth={handleAuth}/> 
+      auth ?  <Compiler /> : <Home auth={handleAuth}/> 
     }
     </>
   )

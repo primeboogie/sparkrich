@@ -1,11 +1,11 @@
-import styles from '@css/account.module.css'
+import styles from '@css/compiler.module.css'
 
 
-function Account() {
+function Compiler() {
 
 
   return (
-    <div className={styles.account}>
+    <div className={styles.compiler}>
       <div className={styles.header}>header</div>
 
       <div className={styles.navbar}>navbar</div>
@@ -16,4 +16,4 @@ function Account() {
   )
 }
 
-export default Account
+export default Compiler
