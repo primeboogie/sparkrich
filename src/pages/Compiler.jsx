@@ -11,6 +11,7 @@ function Compiler() {
       <div className={styles.navbar}>navbar</div>
 
       <div className={styles.main}>Main</div>
+      <div className={styles.minnav}>minwd nav</div>
 
     </div>
   )
