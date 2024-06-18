@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: grey; */
+    background-color: black;
     padding: 0.1em;
 }
 
@@ -33,7 +33,9 @@
     padding: 0.5em;
 }
 
-
+.minnav{
+    display: none;
+}
 @media only screen and (max-width: 887px) {
     .compiler{
         grid-template-columns: 25% 77%;
@@ -49,7 +51,7 @@
         grid-template-rows: 10% 1fr 5%;
     }
     .header {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1/1/2/2;
     }
     .navbar {
         grid-area: none;
@@ -69,6 +71,7 @@
         pading: 25em;
         grid-area: 3/1/4/2;
         background-color: yellow;
+        display: flex;
 
     }
 }

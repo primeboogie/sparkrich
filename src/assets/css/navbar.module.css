@@ -1,0 +1,10 @@
+.navbar{
+    color:  red;
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li {
+    padding: 0.7em;
+}
