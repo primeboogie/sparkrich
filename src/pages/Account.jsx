@@ -1,8 +1,10 @@
 import React from 'react'
+import styles from '@css/account.module.css'
+
 
 function Account() {
   return (
-    <div>Account Dashboard</div>
+    <div className={styles.account}>Account Dashboard</div>
   )
 }
 

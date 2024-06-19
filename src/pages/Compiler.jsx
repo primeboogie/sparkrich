@@ -18,6 +18,7 @@ function Compiler() {
       <Navbar/>
       <div className={styles.main}>
         <Routes>
+          <Route path="/" element={<Account />} />
           <Route path="/account" element={<Account />} />
           <Route path="/deposit" element={<Deposit />} />
           <Route path="/withdrawal" element={<Withdrawal />} />

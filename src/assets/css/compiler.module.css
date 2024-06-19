@@ -1,76 +1,78 @@
 .compiler{
-    min-width: 100%;
-    min-height: 100vh;
-    background-color: #e8e8e8;
+    width: 100%;
+    height: 100vh;
+    background-color: #fffbfb;
     display: grid;
-    grid-template-columns: 18% 82%;
-    grid-template-rows: 13% 87%;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto 1fr;
+    color: black;
 }
 
 .header{
     grid-area: 1/2/2/3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 0.1em;
+    padding: 0.2em 0.8em;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-items: center;
+    
 }
 
 .navbar{
     grid-area: 1/1/3/2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: blue;
+    background: linear-gradient(120deg, #1d0222,  #9f18ab);
     padding: 0.5em;
+    border-radius: 0 35px 35px 0;
 }
 .main{
     grid-area: 2/2/3/3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
     padding: 0.5em;
 }
 
-.minnav{
+.compiler .minnav{
+    padding: 0.5em;
+    grid-area: 3/1/4/2;
+    background-color: #7b7979;
     display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 @media only screen and (max-width: 887px) {
     .compiler{
-        grid-template-columns: 25% 77%;
-        grid-template-rows: 13% 87%;
+        grid-template-columns: 25% 1fr;
     }
 
 }
 
-/* Landscape phones and smaller */
 @media only screen and (max-width: 700px) {
     .compiler {
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 1fr 5%;
+        grid-template-rows: auto 1fr auto !important;
     }
+
     .header {
         grid-area: 1/1/2/2;
     }
-    .navbar {
+    .compiler .navbar {
         grid-area: none;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        height: 50%;
+        height: 90%;
         z-index: 1;
-        
+        border-radius: 35px;
     }
-    .main{
+
+    .compiler .main{
         grid-area: 2/1/3/2;
     }
-    .minnav{
-        pading: 25em;
-        grid-area: 3/1/4/2;
-        background-color: yellow;
+
+    .compiler .minnav{
         display: flex;
 
     }

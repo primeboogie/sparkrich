@@ -1,43 +1,49 @@
+:root {
+    --color-gradient1-start: #400e48;
+    --color-gradient1-end: #9f18ab;
+    
+    --color-gradient2-start: #f42f1f;
+    --color-gradient2-end: #9f18ab;
+    
+    --color-gradient3-start: #f13955;
+    --color-gradient3-end: #373453;
+    
+    --color-gradient4-start: #2a3abd;
+    --color-gradient4-end: #33abdf;
+    
+    --color-gradient5-start: #e4e7f4;
 
-.nfs{
-    color: #fff;
-}
-@media only screen and (min-width: 1200px) {
-.nfs {
-    font-size: calc(10px + 1vw); /* Example: Increase font size slightly with viewport width */
-}
-}
-
-/* Medium screens (tablets, smaller desktops) */
-@media only screen and (max-width: 1199px) {
-.nfs {
-    font-size: calc(10px + 0.5vw); /* Example: Slightly smaller font size for tablets and smaller desktops */
-}
-}
-
-/* Small screens (tablets in portrait mode, large phones) */
-@media only screen and (max-width: 991px) {
-.nfs {
-    font-size: calc(12px + 0.25vw); /* Example: Further reduction in font size for smaller tablets and large phones */
-}
+    --gradient-box1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
+    --gradient-box2: linear-gradient(130deg, var(--color-gradient2-start), var(--color-gradient2-end));
+    --gradient-box3: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
+    --gradient-box4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+    --gradient-box5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
 
-/* Extra small screens (phones, less than 768px) */
-@media only screen and (max-width: 767px) {
-.nfs {
-    font-size: 10px; /* Example: Smaller font size for phones and smaller devices */
-}
+/* Example usage of these variables */
+.gradient-box1 {
+    background: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
 }
 
-/* Landscape phones and smaller */
-@media only screen and (max-width: 480px) {
-.nfs {
-    font-size: 8px; /* Example: Minimal font size for landscape phones and very small devices */
-}
+.gradient-box2 {
+    background: linear-gradient(230deg, var(--color-gradient2-start), var(--color-gradient2-end));
 }
 
+.gradient-box3 {
+    background: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
+}
 
+.gradient-box4 {
+    background: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+}
 
+.gradient-box5 {
+    background: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
+}
+
+@media only screen and (max-width: 887px) {
+
+}
 
 @media only screen and (max-width: 787px) {
 

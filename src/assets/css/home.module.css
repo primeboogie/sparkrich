@@ -46,7 +46,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 .home .authbtn{
     display: flex;
@@ -90,19 +90,16 @@
 }
 
 
-  /* Medium screens (tablets, smaller desktops) */
   @media only screen and (max-width: 1199px) {
 
 
   }
   
-  /* Small screens (tablets in portrait mode, large phones) */
   @media only screen and (max-width: 991px) {
 
 
   }
   
-  /* Extra small screens (phones, less than 768px) */
   @media only screen and (max-width: 800px) {
 .home nav{
 }

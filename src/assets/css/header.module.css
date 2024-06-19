@@ -1,4 +1,240 @@
-.header{
-    background-color: green;
+:root {
+    --color-gradient1-start: #400e48;
+    --color-gradient1-end: #9f18ab;
+    
+    --color-gradient2-start: #f42f1f;
+    --color-gradient2-end: #9f18ab;
+    
+    --color-gradient3-start: #f13955;
+    --color-gradient3-end: #373453;
+    
+    --color-gradient4-start: #2a3abd;
+    --color-gradient4-end: #33abdf;
+    
+    --color-gradient5-start: #e4e7f4;
+
+    --gradient-box1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
+    --gradient-box2: linear-gradient(130deg, var(--color-gradient2-start), var(--color-gradient2-end));
+    --gradient-box3: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
+    --gradient-box4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+    --gradient-box5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
+}
+
+/* Example usage of these variables */
+.gradient-box1 {
+    background: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
+}
+
+.gradient-box2 {
+    background: linear-gradient(230deg, var(--color-gradient2-start), var(--color-gradient2-end));
+}
+
+.gradient-box3 {
+    background: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
+}
+
+.gradient-box4 {
+    background: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+}
+
+.gradient-box5 {
+    background: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
+}
+
+.header img{
+    width: 40px;
+}
+
+.header .welcomeagent{
+    font-size: 1.7em;
+    font-weight: 500;
+
+    background-image: url("/public/images/colors.png");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.header .welcomecompany{
+    display: none;
+}
+
+.header .welcomeagent i{
+    font-weight: 800;
+    color: transparent;
+    background-image: url("/public/images/colors.png");
+
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+.header .searchdiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    background: var(--color-gradient1-start);
+    gap: 0.5em;
+    border-radius: 7px;
+    padding-left: 0.5em;
+    overflow: hidden;
+    justify-self: center;
+} 
+
+.header .searchdiv svg{
+    font-size: 24px;
+    font-weight: 100;
+    fill: #fff;
+    stroke-width: 4px;
+}
+.header .searchdiv input{
+    width: 100%;
+    padding: 1em 0em;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
     color: #fff;
 }
+.header .searchdiv input::placeholder{
+    color: #fff;
+}
+
+ .info{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.info svg{
+    font-size: 25px;
+}
+
+.ininfo{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.5em;
+}
+.ininfo span:nth-child(1){
+    grid-area: 1/1/2/2;
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    place-self: end start;
+    padding: 0em 0.5em;    
+
+}
+.ininfo span:nth-child(2){
+    grid-area: 2/1/3/2;
+    color: red;
+    font-size: 0.9em;
+    padding: 0em 0.5em;
+    color: grey;
+    font-style: italic;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.1em;
+    border: none;
+}
+.ininfo span:nth-child(3){
+    grid-area: 1/2/3/3;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--gradient-box2);
+}
+
+.ininfo svg{
+     fill: var(--color-gradient4-end); 
+    font-size: 20px;
+    }
+
+
+    @media only screen and (max-width: 887px) {
+        .header{
+            grid-template-columns: repeat(2 auto);
+            grid-template-rows: repeat(2 auto);
+        }
+        .header .welcomeagent{
+            grid-area: 1/1/2/2;
+
+        }
+        .header .searchdiv{
+            grid-area: 2/1/3/2;
+            width: 95%;
+        }
+        .header .searchdiv input{
+            font-size: 11px;
+        }
+        .header .searchdiv svg{
+            font-size: 16px;
+        }
+        .header .info{
+            grid-area: 1/2/3/3;
+            place-self: center end;
+        }
+
+    }
+
+    @media only screen and (max-width: 787px) {
+
+
+    }
+    
+    /* Landscape phones and smaller */
+    @media only screen and (max-width: 680px) {
+    
+    
+    }
+    
+    @media only screen and (max-width: 570px) {
+    
+      
+    }
+    
+    @media only screen and (max-width: 460px) {
+        .header{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+        .header .welcomeagent{
+            display: none;
+        }
+        .header .welcomecompany{
+            grid-area: 1/1/2/3;
+            display: block;
+            font-size: 1.9em;
+            font-weight: 900;
+            background-image: url("/public/images/colors.png");
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .header .searchdiv{
+            display: none;
+        }
+        .header .info{
+            grid-area: 2/1/3/2;
+            /* width: 100%; */
+            justify-content: space-around;
+        }
+    
+.ininfo span:nth-child(1){
+    font-weight: 600;
+    font-size: 1.2em;
+
+
+}
+      
+    }
+    
+    @media only screen and (max-width: 330px) {
+    
+      
+    }
+    
