@@ -1,4 +1,3 @@
-import React from 'react'
 import compstyles from '@css/compiler.module.css'
 import styles from '@css/minnav.module.css'
 

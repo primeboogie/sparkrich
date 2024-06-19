@@ -22,11 +22,10 @@ function Compiler() {
           <Route path="/account" element={<Account />} />
           <Route path="/deposit" element={<Deposit />} />
           <Route path="/withdrawal" element={<Withdrawal />} />
-      </Routes>
+        </Routes>
       </div>
       <Minnav/>
-
-    </div>
+      </div>
   )
 }
 
