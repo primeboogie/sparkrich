@@ -12,8 +12,8 @@ import { FaUsersCog } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaSortAmountUp } from "react-icons/fa";
 
-import compstyles from '@css/compiler.module.css'
-import styles from '@css/navbar.module.css'
+import compstyles from '@css/compiler/compiler.module.css'
+import styles from '@css/compiler/navbar.module.css'
 import sparkpng from '/spark.png'
 
 function Navbar() {

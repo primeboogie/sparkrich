@@ -1,0 +1,24 @@
+.account{
+    background: #62645a;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: 1fr 300px;
+}
+
+.account .dashprice{
+    background: #8b5555;
+    grid-area: 1/1/2/2;
+}
+
+.account .dashoffers{
+    background: #265671;
+    grid-area: 2/1/3/2;
+}
+
+.account .dashstatus{
+    background: rgba(104, 41, 199, 0.6);
+    grid-area: 1/2/3/3;
+}

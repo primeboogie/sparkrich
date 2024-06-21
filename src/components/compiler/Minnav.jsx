@@ -1,5 +1,5 @@
-import compstyles from '@css/compiler.module.css'
-import styles from '@css/minnav.module.css'
+import compstyles from '@css/compiler/compiler.module.css'
+import styles from '@css/compiler/minnav.module.css'
 
 
 function Minnav() {

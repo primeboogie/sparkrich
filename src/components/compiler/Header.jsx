@@ -1,6 +1,6 @@
 import React from 'react'
-import compstyles from '@css/compiler.module.css'
-import styles from '@css/header.module.css'
+import compstyles from '@css/compiler/compiler.module.css'
+import styles from '@css/compiler/header.module.css'
 
 import sparkbg from '/layout/sparkbg.jpg'
 import { GoBell } from "react-icons/go";
@@ -19,7 +19,7 @@ function Header() {
       </span>
 
       <div className={styles.searchdiv}>
-      <IoSearch stroke-width='9px'/>
+      <IoSearch strokeWidth='9px'/>
         <input type="text" placeholder="Search Downlines..." />
       </div>
 
