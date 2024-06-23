@@ -1,45 +1,69 @@
 :root {
-    --color-gradient1-start: #400e48;
-    --color-gradient1-end: #9f18ab;
+    --color-gradient1-start: #4a0f52;
+    --color-gradient1-end:  #8a1596;
     
-    --color-gradient2-start: #f42f1f;
-    --color-gradient2-end: #9f18ab;
+    --color-gradient2-start:  #f3391d;
+    --color-gradient2-end:  #f3911f;
     
-    --color-gradient3-start: #f13955;
-    --color-gradient3-end: #373453;
+    --color-gradient3-start: #df3854;
+    --color-gradient3-end: #4b3452;
     
-    --color-gradient4-start: #2a3abd;
-    --color-gradient4-end: #33abdf;
+    --color-gradient4-start: #2a44bf;
+    --color-gradient4-end: #31a2db;
     
     --color-gradient5-start: #e4e7f4;
 
-    --gradient-box1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
-    --gradient-box2: linear-gradient(130deg, var(--color-gradient2-start), var(--color-gradient2-end));
-    --gradient-box3: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
-    --gradient-box4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
-    --gradient-box5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
+    --gradientbox1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
+    --gradientbox2: linear-gradient(200deg, var(--color-gradient2-start) , var(--color-gradient2-end));
+    --gradientbox3: linear-gradient(290deg, var(--color-gradient3-start), var(--color-gradient3-end));
+    --gradientbox4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+    --gradientbox5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
 
-/* Example usage of these variables */
-.gradient-box1 {
+.gradientbox1 {
     background: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
 }
 
-.gradient-box2 {
+.gradientbox2 {
     background: linear-gradient(230deg, var(--color-gradient2-start), var(--color-gradient2-end));
 }
 
-.gradient-box3 {
+.gradientbox3 {
     background: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
 }
 
-.gradient-box4 {
+.gradientbox4 {
     background: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
 }
 
-.gradient-box5 {
+.gradientbox5 {
     background: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
+
+
+.syspending{
+    color: #e37f03;
+    background: #eed1ab;
+    padding: 0.4em 0.5em;
+    border-radius: 0.5rem;
+}
+
+
+.syssuccess{
+    color: #1ee467;
+    background: rgba(195,225,217,255);
+    padding: 0.4em 0.5em;
+    border-radius: 0.5rem;
+}
+
+
+.sysrejected{
+    color: #e96365;
+    background: #e8d1db;
+    padding: 0.4em 0.5em;
+    border-radius: 0.5rem;
+}
+
 
 @media only screen and (max-width: 887px) {
 

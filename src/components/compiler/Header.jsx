@@ -2,7 +2,6 @@ import React from 'react'
 import compstyles from '@css/compiler/compiler.module.css'
 import styles from '@css/compiler/header.module.css'
 
-import sparkbg from '/layout/sparkbg.jpg'
 import { GoBell } from "react-icons/go";
 import { MdVerifiedUser } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";

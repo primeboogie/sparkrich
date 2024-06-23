@@ -1,0 +1,36 @@
+.dashprice{
+    display: grid;
+    color: #000;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: auto repeat(2, 42%);
+    grid-gap: 1.5em;
+    place-content: start;
+    padding: 0.9em;
+}
+
+.dashprice .dashhead{
+    grid-area: 1/1/2/5;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.dashhead span:nth-child(1){
+    font-weight: 500;
+    font-size: 1.2em;
+    place-self: start;
+
+}
+
+.dashhead span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.3em;
+    color: grey;
+    place-self: start;
+
+}
+
+.dashhead span:nth-child(2) i{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #000;
+}

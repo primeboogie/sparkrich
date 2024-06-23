@@ -1,21 +1,21 @@
 :root {
-    --color-gradient1-start: #400e48;
-    --color-gradient1-end: #9f18ab;
+    --color-gradient1-start: #4a0f52;
+    --color-gradient1-end:  #8a1596;
     
-    --color-gradient2-start: #f42f1f;
-    --color-gradient2-end: #9f18ab;
+    --color-gradient2-start:  #f3391d;
+    --color-gradient2-end:  #f3911f;
     
-    --color-gradient3-start: #f13955;
-    --color-gradient3-end: #373453;
+    --color-gradient3-start: #df3854;
+    --color-gradient3-end: #4b3452;
     
-    --color-gradient4-start: #2a3abd;
-    --color-gradient4-end: #33abdf;
+    --color-gradient4-start: #2a44bf;
+    --color-gradient4-end: #31a2db;
     
     --color-gradient5-start: #e4e7f4;
 
     --gradient-box1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
-    --gradient-box2: linear-gradient(130deg, var(--color-gradient2-start), var(--color-gradient2-end));
-    --gradient-box3: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
+    --gradient-box2: linear-gradient(200deg, var(--color-gradient2-start) , var(--color-gradient2-end));
+    --gradient-box3: linear-gradient(290deg, var(--color-gradient3-start), var(--color-gradient3-end));
     --gradient-box4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
     --gradient-box5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
@@ -75,7 +75,7 @@
     justify-content: start;
     align-items: center;
     width: 50%;
-    background: var(--color-gradient1-start);
+    background: var(--color-gradient1-start); 
     gap: 0.5em;
     border-radius: 7px;
     padding-left: 0.5em;
