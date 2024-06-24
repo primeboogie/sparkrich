@@ -23,8 +23,8 @@
 .dashstatus{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto repeat(3, auto);
-    grid-gap: 1em;
+    grid-template-rows: auto auto auto 1fr;
+    grid-gap: 0.7em;
     padding: 0.5em 1em;
     color: #000;
     place-content: start;
@@ -37,6 +37,7 @@
     display: grid;
     border-radius: 1rem;
     padding: 0.6em 1.5em;
+    overflow: auto;
 }
 
 .ai{
@@ -87,7 +88,7 @@
     place-content: start;
     grid-gap: 0.5em;
     overflow: auto;
-    max-height: 150px;
+    max-height: 400px;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
 
@@ -139,6 +140,7 @@
 
 .uiinfo{
     grid-area: 4/1/5/2;
+    place-items: start;
 }
 
 .uiinfo span:nth-child(1){
@@ -170,4 +172,48 @@
 .uiinfo ul li svg{
     color: #e2a20e;
     font-size: 1.2em;
+}
+
+@media only screen and (max-height: 1000px) {
+.uitra .uialltra{
+    max-height: 200px;
+}
+}
+
+@media only screen and (max-height: 900px) {
+    .uitra .uialltra{
+        max-height: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+
+}
+
+@media only screen and (max-width: 787px) {
+
+
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width: 680px) {
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+}
+
+@media only screen and (max-width: 330px) {
+
+  
 }

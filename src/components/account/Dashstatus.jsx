@@ -19,6 +19,9 @@ function Dashstatus() {
         { name: 'Boogie', sys: 'KSH', amount: '1000', status: 2, state: true },
         { name: 'Ben', sys: 'KSH', amount: '10', status: 0, state: true },
         { name: 'Bosco', sys: 'KSH', amount: '982', status: 1, state: false },
+        { name: 'Boogie', sys: 'KSH', amount: '1000', status: 2, state: true },
+        { name: 'Ben', sys: 'KSH', amount: '10', status: 0, state: true },
+        { name: 'Bosco', sys: 'KSH', amount: '982', status: 1, state: false },
         { name: 'Mildred', sys: 'KSH', amount: '46', status: 2, state: true }
     ];
 

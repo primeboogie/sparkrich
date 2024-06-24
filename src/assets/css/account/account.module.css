@@ -20,3 +20,56 @@
 .account .dashstatus{
     grid-area: 1/2/3/3;
 }
+
+@media only screen and (max-width: 1300px) {
+
+    .account{
+        grid-template-columns: 1fr 34%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .account{
+        grid-template-columns: 1fr 45%;
+        grid-template-rows: none;
+    }
+    .account .dashoffers{
+        display: none;
+    }
+    .account .dashprice{
+        grid-area: 1/1/2/2;
+    }
+    .account .dashstatus{
+        grid-area: 1/2/2/3;
+    }
+}
+
+@media only screen and (max-width: 887px) {
+
+}
+
+@media only screen and (max-width: 787px) {
+
+
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width: 680px) {
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+}
+
+@media only screen and (max-width: 330px) {
+
+  
+}

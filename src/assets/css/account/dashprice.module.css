@@ -34,3 +34,55 @@
     font-size: 1.1em;
     color: #000;
 }
+
+@media only screen and (max-width: 1300px) {
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+.dashprice{
+    grid-template-columns: repeat(2, 47%);
+    grid-template-rows: auto repeat(4, 20%);
+    overflow: auto;
+}
+
+.dashprice .dashhead{
+    grid-area: 1/1/2/3;
+}
+.dashhead span:nth-child(2){
+
+display: none;
+}
+
+}
+
+@media only screen and (max-width: 887px) {
+
+}
+
+@media only screen and (max-width: 787px) {
+
+
+}
+
+@media only screen and (max-width: 680px) {
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+}
+
+@media only screen and (max-width: 330px) {
+
+  
+}

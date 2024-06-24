@@ -34,7 +34,7 @@
 .minnav{
     display: none;
 }
-@media only screen and (max-width: 887px) {
+@media only screen and (max-width: 957px) {
     .compiler{
         grid-template-columns: 25% 1fr;
     }
