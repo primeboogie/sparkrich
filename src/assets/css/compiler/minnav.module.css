@@ -1,4 +1,10 @@
 .minnav{
-    color:  #ffffff;
-    
+    display: flex;
+    gap: 0.9em;
+   
+}
+
+.minnav a{
+    color: #fff;
+    font-size: 1.3em;
 }

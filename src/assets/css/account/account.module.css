@@ -1,13 +1,24 @@
 .account{
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1;
+
+}
+.account .largedevise{
     display: grid;
     grid-template-columns: 1fr 28%;
     grid-template-rows: 60% auto;
     grid-gap: 0.5em;
 }
-
+.account .smalldevise{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: none;
+    grid-template-columns: 1;
+}
 
 .account .dashprice{
     grid-area: 1/1/2/2;
@@ -23,13 +34,13 @@
 
 @media only screen and (max-width: 1300px) {
 
-    .account{
+    .account .largedevise{
         grid-template-columns: 1fr 34%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .account{
+    .account .largedevise{
         grid-template-columns: 1fr 45%;
         grid-template-rows: none;
     }
@@ -55,9 +66,21 @@
 
 /* Landscape phones and smaller */
 @media only screen and (max-width: 680px) {
+    .account .largedevise{
+        display: none;
+    }
+    .account .smalldevise{
+        display: grid;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
 
 
 }
+
 
 @media only screen and (max-width: 570px) {
 

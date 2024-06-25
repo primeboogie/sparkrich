@@ -13,32 +13,11 @@
     
     --color-gradient5-start: #e4e7f4;
 
-    --gradient-box1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
-    --gradient-box2: linear-gradient(200deg, var(--color-gradient2-start) , var(--color-gradient2-end));
-    --gradient-box3: linear-gradient(290deg, var(--color-gradient3-start), var(--color-gradient3-end));
-    --gradient-box4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
-    --gradient-box5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
-}
-
-/* Example usage of these variables */
-.gradient-box1 {
-    background: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
-}
-
-.gradient-box2 {
-    background: linear-gradient(230deg, var(--color-gradient2-start), var(--color-gradient2-end));
-}
-
-.gradient-box3 {
-    background: linear-gradient(230deg, var(--color-gradient3-start), var(--color-gradient3-end));
-}
-
-.gradient-box4 {
-    background: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
-}
-
-.gradient-box5 {
-    background: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
+    --gradientbox1: linear-gradient(230deg, var(--color-gradient1-start), var(--color-gradient1-end));
+    --gradientbox2: linear-gradient(200deg, var(--color-gradient2-start) , var(--color-gradient2-end));
+    --gradientbox3: linear-gradient(290deg, var(--color-gradient3-start), var(--color-gradient3-end));
+    --gradientbox4: linear-gradient(230deg, var(--color-gradient4-start), var(--color-gradient4-end));
+    --gradientbox5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
 
 .header img{
@@ -145,7 +124,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: var(--gradient-box2);
+    background: var(--gradientbox2);
 }
 
 .ininfo svg{
@@ -200,6 +179,8 @@
         .header{
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
+            background: var(--gradientbox4);
+            background: rgba(239, 239, 239, 0.67);
         }
         .header .welcomeagent{
             display: none;
@@ -207,13 +188,14 @@
         .header .welcomecompany{
             grid-area: 1/1/2/3;
             display: block;
-            font-size: 1.9em;
+            font-size: 2.5em;
             font-weight: 900;
             background-image: url("/public/images/colors.png");
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+            justify-self: start;
         }
         .header .searchdiv{
             display: none;

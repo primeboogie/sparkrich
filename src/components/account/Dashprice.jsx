@@ -9,7 +9,7 @@ function Dashprice() {
   return (
     <div className={`${accstyles.dashprice} ${styles.dashprice}`}>
     <div className={styles.dashhead}>
-        <span>Account Dashboard </span>
+        <span>{" > Account Dashboard "}</span>
         <span>
             Show: <i>Today, 23 December 2024</i>
         </span>

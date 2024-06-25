@@ -98,9 +98,11 @@
     background-color: #ffffff;
     padding: 0.5em ;
     border-radius: 0.5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 40px repeat(3, auto);
+    justify-items: start;
     align-items: center;
-    justify-content: space-between;
+    grid-gap: 0.5em;
 }
 
 .uiintra span:nth-child(1){
@@ -112,6 +114,16 @@
 
 .uiintra span:nth-child(2){
     font-style: italic;
+    text-wrap: nowrap;
+}
+
+.uiintra span:nth-child(3){
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.uiintra span:nth-child(4){
+    justify-self: end;
 }
 
 .syspending{
@@ -148,6 +160,8 @@
     font-weight: 600;
     font-size: 1.3em;
 }
+
+
 .uiinfo p{
     color: #636262;
     font-style: italic;
@@ -185,10 +199,18 @@
         max-height: 150px;
     }
 
+
 }
 
 @media only screen and (max-width: 1300px) {
 
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .uialltra .uiintra{
+        /* width: 350px; */
+    }
 
 }
 

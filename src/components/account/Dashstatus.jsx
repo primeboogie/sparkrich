@@ -13,7 +13,7 @@ import Listed from './Listed';
 function Dashstatus() {
 
     const records = [
-        { name: 'Boogie', sys: 'KSH', amount: '1000', status: 2, state: true },
+        { name: 'Boogie Baby yeaj', sys: 'KSH', amount: '1000', status: 2, state: true },
         { name: 'Ben', sys: 'KSH', amount: '10', status: 0, state: true },
         { name: 'Bosco', sys: 'KSH', amount: '982', status: 1, state: false },
         { name: 'Boogie', sys: 'KSH', amount: '1000', status: 2, state: true },
@@ -27,7 +27,7 @@ function Dashstatus() {
 
   return (
     <div className={`${accstyles.dashstatus} ${styles.dashstatus}`}>
-        <span className={styles.ai} >Account Information</span>
+        <span className={styles.ai} >Account Summary</span>
         <div className={styles.uibal} >
             <img src={useri} alt="" />
             <span>Your Balance</span>

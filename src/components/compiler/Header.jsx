@@ -13,7 +13,6 @@ function Header() {
         Welcome Back <i>Boogie</i>!
       </span>
       <span className={styles.welcomecompany}>
-        {/* <img src={sparkbg} alt="" /> */}
         SPARK-RICH
       </span>
 
