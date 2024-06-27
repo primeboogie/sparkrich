@@ -1,10 +1,15 @@
 .minnav{
-    display: flex;
-    gap: 0.9em;
-   
+    background: rgba(239, 239, 239, 0.67);
+    display: grid;
 }
 
 .minnav a{
-    color: #fff;
+    color: #000;
     font-size: 1.3em;
+}
+.swbwk{
+    background: #c5c5c5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

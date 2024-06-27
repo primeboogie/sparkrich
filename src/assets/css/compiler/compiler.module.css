@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 15% 1fr;
     grid-template-rows: auto 1fr;
-    /* background-color: #f0f0f0; */
     background-color: #FFF;
 }
 
@@ -31,9 +30,11 @@
     padding: 0.5em;
 }
 
-.minnav{
+.compiler .minnav{
     display: none;
 }
+
+
 @media only screen and (max-width: 957px) {
     .compiler{
         grid-template-columns: 25% 1fr;
@@ -67,15 +68,8 @@
     }
 
     .compiler .minnav{
-        display: flex;
         grid-area: 3/1/4/2;
-        padding: 0.5em;
-        background-color: #18757d;
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-        height: 3rem;
-
+        display: grid;
     }
 }
 
