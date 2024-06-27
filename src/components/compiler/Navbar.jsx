@@ -16,9 +16,9 @@ import compstyles from '@css/compiler/compiler.module.css'
 import styles from '@css/compiler/navbar.module.css'
 import sparkpng from '/spark.png'
 
-function Navbar() {
+function Navbar( {mobile} ) {
   return (
-    <div className={`${compstyles.navbar} ${styles.navbar}`}>
+    <div className={`${compstyles.navbar} ${styles.navbar}`} style={mobile}>
       <div className={styles.sparkpng}>
         <img src={sparkpng} alt="sparkpng" />
       </div>

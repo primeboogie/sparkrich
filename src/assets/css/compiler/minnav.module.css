@@ -1,10 +1,13 @@
 .minnav{
     background: rgba(239, 239, 239, 0.67);
     display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
 }
 
 .minnav a{
-    color: #000;
     font-size: 1.3em;
 }
 .swbwk{
@@ -12,4 +15,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.minnav svg {
+    fill: rgba(151, 145, 145, 0.92);
+    align-self: center;
 }

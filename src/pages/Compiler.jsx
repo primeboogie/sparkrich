@@ -18,11 +18,13 @@ import Dashoffers from '@comp/account/Dashoffers';
 function Compiler() {
 
   const [navshow, setNavShow] = useState(false)
+  console.log(navshow)
 
   return (
     <div className={styles.compiler}>
       <Header/>
-      <Navbar/>
+      <Navbar mobile={navshow ? { display: 'grid' } : {}} />
+
       <div className={styles.main}>
         <Routes>
           <Route path="/" element={<Account />} />
@@ -34,7 +36,7 @@ function Compiler() {
           <Route path="withdrawal" element={<Withdrawal />} />
         </Routes>
       </div>
-      <Minnav/>
+      <Minnav navshow = {navshow} setNavShow={setNavShow}/>
       </div>
   )
 }
