@@ -12,7 +12,7 @@ function Minnav() {
 
       <Link to="/account/">Dashboard</Link>
       <Link to="/deposit">offers</Link>
-      <Link to="/offers"> <Menubtn/></Link>
+       <Menubtn/>
       <Link to="/status"> <VscGraph/></Link>
       <Link to="/status"><MdOutlineManageAccounts/></Link>
    

@@ -14,19 +14,13 @@ function Menubtn() {
   };
 
   return (
-    <div>
-      <input
-        type="checkbox"
-        id="checkbox"
-        className={styles.checkbox}
-        checked={checked}
-        onChange={handleChange}
-      />
-      <label htmlFor="checkbox" className={styles.toggle}>
-        <div className={styles.bars}></div>
-        <div className={styles.bars}></div>
-        <div className={styles.bars}></div>
-      </label>
+    <div className={styles.switch}>
+      <input type="checkbox" checked={checked} onChange={handleChange} />
+      <div>
+        <span className={styles.line1}></span>
+        <span className={styles.line2}></span>
+        <span className={styles.line3}></span>
+      </div>
     </div>
   );
 }

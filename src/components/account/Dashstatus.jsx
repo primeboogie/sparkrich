@@ -32,6 +32,7 @@ function Dashstatus() {
             <img src={useri} alt="" />
             <span>Your Balance</span>
             <span>KSH 14, 000</span>
+
         </div>
 
         <div className={styles.uitra}>
