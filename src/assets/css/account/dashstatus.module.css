@@ -152,7 +152,7 @@
 
 .uiinfo{
     grid-area: 4/1/5/2;
-    place-items: start;
+    place-content: start;
 }
 
 .uiinfo span:nth-child(1){

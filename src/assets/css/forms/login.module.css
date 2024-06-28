@@ -59,9 +59,9 @@
     background: rgba(149, 145, 145, 0.89);
     color: #fff;
     text-align: left;
-    animation: bounce 1s;
+  }    animation: bounce 1s;
     -webkit-appearance: none;
-  }
+
   
   .login input::placeholder {
     color: #e5e1e1;

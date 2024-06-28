@@ -24,28 +24,27 @@ function Navbar( {mobile} ) {
       </div>
 
     <div className={styles.nav}>
-  
-    <ul>
-        <li><Link to="/account"> <RiDashboardFill /> Home</Link></li>
-        <li><Link to="/deposit"> <FaSortAmountUp /> Investments</Link></li>
-        <li><Link to="/withdrawal"><RiWhatsappLine /> Whatsapp</Link></li>
-        <li><Link to="/account"> <PiHandDepositDuotone /> Deposit</Link></li>
-        <li><Link to="/withdrawal"><PiHandWithdrawDuotone /> Withdrawal</Link></li>
-        <li><Link to="/account"> <FaCartShopping /> Shop</Link></li>
-        <li><Link to="/withdrawal"><BsShop /> Sales</Link></li>
-        <li><Link to="/account"> <PiQrCode /> Agent Codes</Link></li>
-        <li><Link to="/deposit"><PiHandArrowDown /> Loans</Link></li>
-        <li><Link to="/deposit"><FaUsersCog /> Team</Link></li>
-        <li><Link to="/withdrawal"><FaUserEdit /> Profile</Link></li>
-    </ul>
+      <ul>
+          <li><Link to="/account"> <RiDashboardFill /> Home</Link></li>
+          <li><Link to="/deposit"> <FaSortAmountUp /> Investments</Link></li>
+          <li><Link to="/withdrawal"><RiWhatsappLine /> Whatsapp</Link></li>
+          <li><Link to="/account"> <PiHandDepositDuotone /> Deposit</Link></li>
+          <li><Link to="/withdrawal"><PiHandWithdrawDuotone /> Withdrawal</Link></li>
+          <li><Link to="/account"> <FaCartShopping /> Shop</Link></li>
+          <li><Link to="/withdrawal"><BsShop /> Sales</Link></li>
+          <li><Link to="/account"> <PiQrCode /> Agent Codes</Link></li>
+          <li><Link to="/deposit"><PiHandArrowDown /> Loans</Link></li>
+          <li><Link to="/deposit"><FaUsersCog /> Team</Link></li>
+          <li><Link to="/withdrawal"><FaUserEdit /> Profile</Link></li>
+      </ul>
   </div>
 
     <div className={styles.logout}>
-    <button className={styles.button}>
-    <span className={styles.buttonContent}>Logout </span>
-  </button>
-
+      <button className={styles.button}>
+      <span className={styles.buttonContent}>Logout </span>
+      </button>
     </div>
+
     </div>
 
   )
