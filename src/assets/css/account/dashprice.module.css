@@ -46,7 +46,7 @@
     grid-template-columns: repeat(2, 47%);
     grid-template-rows: auto repeat(4, 150px);
     overflow: auto;
-    place-content: start;
+    place-content: center;
 }
 
 .dashprice .dashhead{

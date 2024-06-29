@@ -15,7 +15,7 @@ function Dashprice() {
         </span>
     </div>
 
-      <Cardprice groupname={'Whatsapp Balance'} percentage = {60} amount={'33,822'} groupno={'2'} />
+      <Cardprice groupname={'Whatsapp Balance'} percentage = {79} amount={'33,822'} groupno={'2'} />
       <Cardprice groupname={'My Package'} percentage = {10} amount={'Silver'} groupno={'1'} />
       <Cardprice groupname={'Total Whatsapp Withdrawn'} percentage = {60} amount={'67,898'} groupno={'3'} />
       <Cardprice groupname={'Invested Money'} percentage = {60} amount={'11,597'} groupno={'4'} />
