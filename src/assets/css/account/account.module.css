@@ -32,7 +32,7 @@
     grid-area: 1/2/3/3;
 }
 
-@media only screen and (min-height: 900px) {
+@media only screen and (min-height: 1700px) {
     .account{
         place-content: start;
     }

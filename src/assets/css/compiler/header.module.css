@@ -20,8 +20,15 @@
     --gradientbox5: linear-gradient(230deg, var(--color-gradient5-start), var(--color-gradient5-end));
 }
 
+.header{
+    background: rgba(239, 239, 239, 0.67);
+
+}
 .header img{
     width: 40px;
+}
+.header .sparkpng{
+    display: none;
 }
 
 .header .welcomeagent{
@@ -177,41 +184,56 @@
     
     @media only screen and (max-width: 460px) {
         .header{
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto;
+            grid-template-columns: 120px 1fr;
             background: var(--gradientbox4);
             background: rgba(239, 239, 239, 0.67);
+            background: linear-gradient(to right, brown, #8a1596, #df3854);
+            color: #fff;
+            
         }
+        .header .sparkpng {
+            grid-area: 1/1/2/2;
+            display: grid;
+            justify-self: center;
+            overflow: hidden;
+        }
+        .sparkpng img {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(1px 1px 20px yellow);
+        }
+
         .header .welcomeagent{
             display: none;
         }
         .header .welcomecompany{
-            grid-area: 1/1/2/3;
-            display: block;
-            font-size: 2.5em;
+            display: none;
+            font-size: 1.5em;
             font-weight: 900;
             background-image: url("/public/images/colors.png");
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
-            color: transparent;
+            color: #fff;
             justify-self: start;
         }
         .header .searchdiv{
             display: none;
         }
         .header .info{
-            grid-area: 2/1/3/2;
-            /* width: 100%; */
+            grid-area: 1/2/2/3;
             justify-content: space-around;
         }
     
-.ininfo span:nth-child(1){
-    font-weight: 600;
-    font-size: 1.2em;
+        .ininfo span:nth-child(1){      
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .ininfo span:nth-child(2){
+        color: #c2c2c2;
+        }
 
-
-}
       
     }
     
