@@ -35,7 +35,7 @@
     font-size: 1.7em;
     font-weight: 500;
 
-    background-image: url("/public/images/colors.png");
+    background-image: url("/images/colors.png");
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
@@ -48,7 +48,7 @@
 .header .welcomeagent i{
     font-weight: 800;
     color: transparent;
-    background-image: url("/public/images/colors.png");
+    background-image: url("/images/colors.png");
 
     background-size: cover;
     background-clip: text;
@@ -187,7 +187,7 @@
             grid-template-columns: 120px 1fr;
             background: var(--gradientbox4);
             background: rgba(239, 239, 239, 0.67);
-            background: linear-gradient(to right, brown, #8a1596, #df3854);
+            background: linear-gradient( 120deg, #dc9223, #07c164,#740c7f, #df3854);
             color: #fff;
             
         }
@@ -210,7 +210,7 @@
             display: none;
             font-size: 1.5em;
             font-weight: 900;
-            background-image: url("/public/images/colors.png");
+            background-image: url("/images/colors.png");
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;

@@ -15,15 +15,14 @@ import Dashprice from '@comp/account/Dashprice';
 import Dashoffers from '@comp/account/Dashoffers';
 
 
-function Compiler() {
+function Compiler({auth}) {
 
   const [navshow, setNavShow] = useState(false)
-  console.log(navshow)
 
   return (
     <div className={styles.compiler}>
       <Header/>
-      <Navbar mobile={navshow ? { display: 'grid' } : {}} />
+      <Navbar mobile={navshow ? { display: 'grid' } : {}} auth={auth} />
 
       <div className={styles.main}>
         <Routes>

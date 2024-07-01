@@ -21,7 +21,7 @@ import compstyles from '@css/compiler/compiler.module.css'
 import styles from '@css/compiler/navbar.module.css'
 import sparkpng from '/spark.png'
 
-function Navbar( {mobile} ) {
+function Navbar( {mobile, auth} ) {
   return (
     <div className={`${compstyles.navbar} ${styles.navbar}`} style={mobile}>
       <div className={styles.sparkpng}>
@@ -51,7 +51,7 @@ function Navbar( {mobile} ) {
 
     <div className={styles.logout}>
       <button className={styles.button}>
-      <span className={styles.buttonContent}>Logout </span>
+      <span className={styles.buttonContent} onClick={auth} >Logout </span>
       </button>
     </div>
 

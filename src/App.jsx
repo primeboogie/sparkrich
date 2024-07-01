@@ -3,15 +3,15 @@ import Home from '@pages/Home'
 import Compiler from '@pages/Compiler'
 
 function App() {
-  const [auth, setAuth] = useState(true)
+  const [auth, setAuth] = useState(false)
   const handleAuth = () => {
-    setAuth(!auth)
+    setAuth(pre => !pre)
   }
 
   return (
     <>
     {
-      auth ?  <Compiler /> : <Home auth={handleAuth}/> 
+      auth ?  <Compiler auth={handleAuth}/> : <Home auth={handleAuth}/> 
     }
     </>
   )

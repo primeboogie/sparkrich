@@ -15,7 +15,7 @@ function Minnav( {navShow, setNavShow} ) {
     <div className={`${compstyles.minnav} ${styles.minnav}`}>
 
       <Link to="/account/"> <HiHome/> </Link>
-      <Link to="/deposit"> <GoGift/></Link>
+      <Link to="/offers"> <GoGift/></Link>
        <Menubtn navShow={navShow} setNavShow={setNavShow}/>
        <span></span>
       <Link to="/status"> <VscGraph/></Link>
